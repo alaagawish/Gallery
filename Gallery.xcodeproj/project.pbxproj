@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		363EF53F2E286D96003A94C4 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 363EF53E2E286D96003A94C4 /* SDWebImage */; };
+		363EF5502E28708C003A94C4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 363EF54F2E28708C003A94C4 /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		363EF5252E286D57003A94C4 /* Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				363EF53F2E286D96003A94C4 /* SDWebImage in Frameworks */,
+				363EF5502E28708C003A94C4 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,8 @@
 			);
 			name = Gallery;
 			packageProductDependencies = (
+				363EF53E2E286D96003A94C4 /* SDWebImage */,
+				363EF54F2E28708C003A94C4 /* Alamofire */,
 			);
 			productName = Gallery;
 			productReference = 363EF5252E286D57003A94C4 /* Gallery.app */;
@@ -107,6 +116,10 @@
 			);
 			mainGroup = 363EF51C2E286D57003A94C4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				363EF53D2E286D96003A94C4 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				363EF54E2E28708C003A94C4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 363EF5262E286D57003A94C4 /* Products */;
 			projectDirPath = "";
@@ -153,6 +166,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -181,6 +195,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -337,6 +352,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		363EF53D2E286D96003A94C4 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.21.1;
+			};
+		};
+		363EF54E2E28708C003A94C4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		363EF53E2E286D96003A94C4 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 363EF53D2E286D96003A94C4 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		363EF54F2E28708C003A94C4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 363EF54E2E28708C003A94C4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 363EF51D2E286D57003A94C4 /* Project object */;
 }
